@@ -1,0 +1,19 @@
+.wrapper {
+    padding: 5px 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+}
+.profile, .language, .exit{
+    padding: 10px;
+}
+.profile i, .language i, .exit i{
+    padding-right: 10px;
+}
+i{
+    text-decoration: none;
+}

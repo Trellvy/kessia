@@ -1,0 +1,38 @@
+/*Обнуление стилей в браузере по умолчанию(Делаем браузер полностью чистым*/
+*{ padding: 0;margin: 0;border-right: 0;}
+
+/*меняет подсчет ширины блоков*/
+*, *:before, *:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+/*Убираем линии обводки*/
+:focus,:active{outline: none;}
+a:focus, a:active{outline: none;}
+
+/*Перечисляем теги и делаем их блочными*/
+nav,footer,header,aside{display: block;}
+
+/*Уравниваем поведение шрифтов в разных браузерах(например убираем самовольное увеличение шрифтов на айфоне)*/
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-wibkit-text-size-adjust: 100%;}
+
+/*Просим эти теги наследовать семейства шрифтом, так как по умолчанию они этого не делаеют*/
+input,button,textareap{font-family: inherit;}
+
+/*Убираем некоторые особенности в разных браузерах(убирают крестик в input в Internet Explorer, отступы для кнопов в FireFoxfi*/
+input: :-ms-clear{display: none;}
+button{cursor: pointer}
+button: :-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/*Обнуляем заголовки*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400}
+/*-------------------*/
+a{
+	color: inherit;
+}
+::before {
+	/* padding: .6em 2.6em .6em .3em; */
+	vertical-align: middle;
+}

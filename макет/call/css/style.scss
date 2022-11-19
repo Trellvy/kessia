@@ -1,0 +1,154 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrap-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 480px;
+    background-color: #0e0e0e;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.header-inner{
+    padding: 5px 15px;
+    color: #EE204D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    // background-color: #1e1919;
+    z-index: 100;
+}
+.header__back {
+    padding: 20px;
+}
+.fa-solid {
+    margin-right: 5px;
+}
+.header__nickname {
+    font-size: 20px;
+    transition: all .3s;
+    &:hover{
+        transform: scale(120%);
+    }
+}
+.header__avatar {
+}
+
+
+.main {
+    height: 100%;
+    margin-top: 10px;
+    line-height: 1.2em;
+}
+.main__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: center;
+}
+.main__avatar {
+    width: 70%;
+    margin-top: 10%;
+    align-self: center;
+}
+.main__nickname{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+    align-self: center;
+}
+.main__avatar-img {
+    width: 100%;
+    border-radius: 50%;
+}
+.main__emoji-box{
+    margin-top: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__emoji-translate i, .main__emoji-micro i, .main__emoji-volume i{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #EE204D;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+}
+
+.fa-phone-volume {
+    transform: rotate(330deg);
+}
+.main__emoji-hangup{
+    position: absolute;
+    bottom: 50px;
+    align-self: center;
+    // margin-top: 30%;
+    color: #fff;
+    // margin-bottom: 20%;
+}
+.main__emoji-hangup i{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #ff0037;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+}
+
+.fa-phone{
+    transform: rotate(135deg);
+}
+
+#languages{
+    color: #fff;
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    display: none;
+    line-height: 2em;
+}
+.menu li {
+    background-color: #EE204D;
+    border-radius: 10px;
+    padding: 2px 0 2px 6px;
+    margin-top: 5px;
+}
+
+.menu .title {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu .title::before {
+    content: '';
+    font-size: 80%;
+    color: #EE204D;
+}
+
+.menu.open ul {
+    display: block;
+}
+
+.footer{
+    
+}
+.footer__inner {
+}
